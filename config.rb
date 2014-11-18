@@ -68,6 +68,14 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Minify Javascript on build
+  activate :minify_javascript
+
+  # Enable cache buster
+  activate :asset_hash
+
+
 end
 
 activate :deploy do |deploy|
