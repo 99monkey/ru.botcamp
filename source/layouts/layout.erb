@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=PT+Sans', :media => "all" %>
+  <%= javascript_include_tag "preload" %>
+  <meta name="viewport" content="width=device-width" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+  <%= partial "facebook_sdk" %>
+  <%= yield %>
+  <%= javascript_include_tag "application" %>
+</body>
+</html>
