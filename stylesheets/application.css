@@ -1,0 +1,1444 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+/* line 28, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 35, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 37, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+body {
+  line-height: 1; }
+
+/* line 39, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ol, ul {
+  list-style: none; }
+
+/* line 41, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+blockquote, q {
+  quotes: none; }
+
+/* line 43, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 47, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* #Basic Styles
+================================================== */
+/* line 54, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+body {
+  background: #fff;
+  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%; }
+
+/* #Typography
+================================================== */
+/* line 65, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h1, h2, h3, h4, h5, h6 {
+  color: #181818;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal; }
+
+/* line 69, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit; }
+
+/* line 70, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h1 {
+  font-size: 46px;
+  line-height: 50px;
+  margin-bottom: 14px; }
+
+/* line 71, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h2 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 10px; }
+
+/* line 72, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h3 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 8px; }
+
+/* line 73, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h4 {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 4px; }
+
+/* line 74, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h5 {
+  font-size: 17px;
+  line-height: 24px; }
+
+/* line 75, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+h6 {
+  font-size: 14px;
+  line-height: 21px; }
+
+/* line 76, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.subheader {
+  color: #777; }
+
+/* line 78, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+p {
+  margin: 0 0 20px 0; }
+
+/* line 79, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+p img {
+  margin: 0; }
+
+/* line 80, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+p.lead {
+  font-size: 21px;
+  line-height: 27px;
+  color: #777; }
+
+/* line 82, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+em {
+  font-style: italic; }
+
+/* line 83, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+strong {
+  font-weight: bold;
+  color: #333; }
+
+/* line 84, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+small {
+  font-size: 80%; }
+
+/*	Blockquotes  */
+/* line 87, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+blockquote, blockquote p {
+  font-size: 17px;
+  line-height: 24px;
+  color: #777;
+  font-style: italic; }
+
+/* line 88, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+blockquote {
+  margin: 0 0 20px;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #ddd; }
+
+/* line 89, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+blockquote cite {
+  display: block;
+  font-size: 12px;
+  color: #555; }
+
+/* line 90, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+blockquote cite:before {
+  content: "\2014 \0020"; }
+
+/* line 91, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
+  color: #555; }
+
+/* line 93, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+/* #Links
+================================================== */
+/* line 98, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+a, a:visited {
+  color: #333;
+  text-decoration: underline;
+  outline: 0; }
+
+/* line 99, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+a:hover, a:focus {
+  color: #000; }
+
+/* line 100, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+p a, p a:visited {
+  line-height: inherit; }
+
+/* #Lists
+================================================== */
+/* line 105, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul, ol {
+  margin-bottom: 20px; }
+
+/* line 106, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul {
+  list-style: none outside; }
+
+/* line 107, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ol {
+  list-style: decimal; }
+
+/* line 108, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ol, ul.square, ul.circle, ul.disc {
+  margin-left: 30px; }
+
+/* line 109, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul.square {
+  list-style: square outside; }
+
+/* line 110, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul.circle {
+  list-style: circle outside; }
+
+/* line 111, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul.disc {
+  list-style: disc outside; }
+
+/* line 112, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul ul, ul ol,
+ol ol, ol ul {
+  margin: 4px 0 5px 30px;
+  font-size: 90%; }
+
+/* line 114, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul ul li, ul ol li,
+ol ol li, ol ul li {
+  margin-bottom: 6px; }
+
+/* line 116, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+li {
+  line-height: 18px;
+  margin-bottom: 12px; }
+
+/* line 117, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+ul.large li {
+  line-height: 21px; }
+
+/* line 118, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+li p {
+  line-height: 21px; }
+
+/* #Images
+================================================== */
+/* line 123, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto; }
+
+/* #Buttons
+================================================== */
+/* line 131, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background: #eee;
+  /* Old browsers */
+  background: #eee -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* FF3.6+ */
+  background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  /* Chrome,Safari4+ */
+  background: #eee -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: #eee -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Opera11.10+ */
+  background: #eee -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* IE10+ */
+  background: #eee linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* W3C */
+  border: 1px solid #aaa;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #444;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: normal;
+  padding: 8px 10px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 161, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  color: #222;
+  background: #ddd;
+  /* Old browsers */
+  background: #ddd -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* FF3.6+ */
+  background: #ddd -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+  /* Chrome,Safari4+ */
+  background: #ddd -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: #ddd -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Opera11.10+ */
+  background: #ddd -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* IE10+ */
+  background: #ddd linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* W3C */
+  border: 1px solid #888;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa; }
+
+/* line 178, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  border: 1px solid #666;
+  background: #ccc;
+  /* Old browsers */
+  background: #ccc -moz-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* FF3.6+ */
+  background: #ccc -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.35)), color-stop(100%, rgba(10, 10, 10, 0.4)));
+  /* Chrome,Safari4+ */
+  background: #ccc -webkit-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: #ccc -o-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* Opera11.10+ */
+  background: #ccc -ms-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* IE10+ */
+  background: #ccc linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  /* W3C */ }
+
+/* line 192, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center; }
+
+/* Fix for odd Mozilla border & padding issues */
+/* line 203, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* #Forms
+================================================== */
+/* line 213, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+form {
+  margin-bottom: 20px; }
+
+/* line 215, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+fieldset {
+  margin-bottom: 20px; }
+
+/* line 217, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  border: 1px solid #ccc;
+  padding: 6px 4px;
+  outline: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
+  margin: 0;
+  width: 210px;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  background: #fff; }
+
+/* line 236, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+select {
+  padding: 0; }
+
+/* line 238, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1px solid #aaa;
+  color: #444;
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+
+/* line 247, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+textarea {
+  min-height: 60px; }
+
+/* line 249, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+label,
+legend {
+  display: block;
+  font-weight: bold;
+  font-size: 13px; }
+
+/* line 254, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+select {
+  width: 220px; }
+
+/* line 256, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+input[type="checkbox"] {
+  display: inline; }
+
+/* line 258, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+label span,
+legend span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #444; }
+
+/* #Misc
+================================================== */
+/* line 266, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.remove-bottom {
+  margin-bottom: 0 !important; }
+
+/* line 267, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.half-bottom {
+  margin-bottom: 10px !important; }
+
+/* line 268, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/base.css */
+.add-bottom {
+  margin-bottom: 20px !important; }
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 12, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 151, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 267, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 294, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * Grid
+ */
+/* line 4, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/hashgrid.css */
+#grid {
+  /* Dimensions - same width as your grid with gutters */
+  width: 960px;
+  /* Grid (left-aligned)
+  position: absolute;
+  top: 0;
+  left: 0;
+  */
+  /* Grid (centered) */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -480px; }
+
+/**
+ * Vertical grid lines
+ *
+ * Set the column width taking the borders into consideration,
+ * and use margins to set column gutters.
+ */
+/* line 30, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/hashgrid.css */
+#grid div.vert {
+  width: 38px;
+  border: solid darkturquoise;
+  border-width: 0 1px;
+  margin-right: 20px; }
+
+/* line 39, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/hashgrid.css */
+#grid div.vert.first-line {
+  margin-left: 0px; }
+
+/**
+ * Horizontal grid lines, defined by your base line height
+ *
+ * Remember, the CSS properties that define the box model:
+ * visible height = height + borders + margins + padding
+ */
+/* line 52, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/hashgrid.css */
+#grid div.horiz {
+  /* 20px line height */
+  height: 10px;
+  border-bottom: 1px dotted darkgray;
+  margin: 0;
+  padding: 0; }
+
+/**
+* Classes for multiple grids
+*
+* When using more than one grid, remember to set the numberOfGrids 
+* option in the hashgrid.js file.
+*/
+/* line 68, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/hashgrid.css */
+#grid.grid-1 div.vert {
+  /* Vertical grid line colour for grid 1 */
+  border-color: darkturquoise; }
+
+/* line 74, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/hashgrid.css */
+#grid.grid-2 {
+  /* Adjustments */
+  padding: 0 160px;
+  width: 660px; }
+
+/* line 81, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/hashgrid.css */
+#grid.grid-2 div.vert {
+  /* Vertical grid line colour for grid 2 */
+  border-color: crimson; }
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+/* #Base 960 Grid
+================================================== */
+/* line 25, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0; }
+
+/* line 26, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* line 28, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.row {
+  margin-bottom: 20px; }
+
+/* Nested Column Classes */
+/* line 31, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.column.alpha, .columns.alpha {
+  margin-left: 0; }
+
+/* line 32, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.column.omega, .columns.omega {
+  margin-right: 0; }
+
+/* Base Grid */
+/* line 35, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .one.column,
+.container .one.columns {
+  width: 40px; }
+
+/* line 37, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .two.columns {
+  width: 100px; }
+
+/* line 38, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .three.columns {
+  width: 160px; }
+
+/* line 39, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .four.columns {
+  width: 220px; }
+
+/* line 40, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .five.columns {
+  width: 280px; }
+
+/* line 41, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .six.columns {
+  width: 340px; }
+
+/* line 42, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .seven.columns {
+  width: 400px; }
+
+/* line 43, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .eight.columns {
+  width: 460px; }
+
+/* line 44, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .nine.columns {
+  width: 520px; }
+
+/* line 45, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .ten.columns {
+  width: 580px; }
+
+/* line 46, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .eleven.columns {
+  width: 640px; }
+
+/* line 47, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .twelve.columns {
+  width: 700px; }
+
+/* line 48, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .thirteen.columns {
+  width: 760px; }
+
+/* line 49, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .fourteen.columns {
+  width: 820px; }
+
+/* line 50, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .fifteen.columns {
+  width: 880px; }
+
+/* line 51, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .sixteen.columns {
+  width: 940px; }
+
+/* line 53, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .one-third.column {
+  width: 300px; }
+
+/* line 54, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .two-thirds.column {
+  width: 620px; }
+
+/* Offsets */
+/* line 57, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-one {
+  padding-left: 60px; }
+
+/* line 58, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-two {
+  padding-left: 120px; }
+
+/* line 59, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-three {
+  padding-left: 180px; }
+
+/* line 60, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-four {
+  padding-left: 240px; }
+
+/* line 61, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-five {
+  padding-left: 300px; }
+
+/* line 62, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-six {
+  padding-left: 360px; }
+
+/* line 63, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-seven {
+  padding-left: 420px; }
+
+/* line 64, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-eight {
+  padding-left: 480px; }
+
+/* line 65, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-nine {
+  padding-left: 540px; }
+
+/* line 66, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-ten {
+  padding-left: 600px; }
+
+/* line 67, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-eleven {
+  padding-left: 660px; }
+
+/* line 68, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-twelve {
+  padding-left: 720px; }
+
+/* line 69, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-thirteen {
+  padding-left: 780px; }
+
+/* line 70, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-fourteen {
+  padding-left: 840px; }
+
+/* line 71, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container .offset-by-fifteen {
+  padding-left: 900px; }
+
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 81, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container {
+    width: 768px; }
+
+  /* line 82, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .column,
+  .container .columns {
+    margin-left: 10px;
+    margin-right: 10px; }
+
+  /* line 84, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+    margin-right: 10px; }
+
+  /* line 85, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .column.omega, .columns.omega {
+    margin-right: 0;
+    margin-left: 10px; }
+
+  /* line 86, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .alpha.omega {
+    margin-left: 0;
+    margin-right: 0; }
+
+  /* line 88, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .one.column,
+  .container .one.columns {
+    width: 28px; }
+
+  /* line 90, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .two.columns {
+    width: 76px; }
+
+  /* line 91, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .three.columns {
+    width: 124px; }
+
+  /* line 92, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .four.columns {
+    width: 172px; }
+
+  /* line 93, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .five.columns {
+    width: 220px; }
+
+  /* line 94, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .six.columns {
+    width: 268px; }
+
+  /* line 95, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .seven.columns {
+    width: 316px; }
+
+  /* line 96, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .eight.columns {
+    width: 364px; }
+
+  /* line 97, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .nine.columns {
+    width: 412px; }
+
+  /* line 98, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .ten.columns {
+    width: 460px; }
+
+  /* line 99, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .eleven.columns {
+    width: 508px; }
+
+  /* line 100, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .twelve.columns {
+    width: 556px; }
+
+  /* line 101, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .thirteen.columns {
+    width: 604px; }
+
+  /* line 102, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .fourteen.columns {
+    width: 652px; }
+
+  /* line 103, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .fifteen.columns {
+    width: 700px; }
+
+  /* line 104, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .sixteen.columns {
+    width: 748px; }
+
+  /* line 106, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .one-third.column {
+    width: 236px; }
+
+  /* line 107, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .two-thirds.column {
+    width: 492px; }
+
+  /* Offsets */
+  /* line 110, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-one {
+    padding-left: 48px; }
+
+  /* line 111, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-two {
+    padding-left: 96px; }
+
+  /* line 112, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-three {
+    padding-left: 144px; }
+
+  /* line 113, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-four {
+    padding-left: 192px; }
+
+  /* line 114, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-five {
+    padding-left: 240px; }
+
+  /* line 115, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-six {
+    padding-left: 288px; }
+
+  /* line 116, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-seven {
+    padding-left: 336px; }
+
+  /* line 117, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-eight {
+    padding-left: 384px; }
+
+  /* line 118, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-nine {
+    padding-left: 432px; }
+
+  /* line 119, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-ten {
+    padding-left: 480px; }
+
+  /* line 120, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-eleven {
+    padding-left: 528px; }
+
+  /* line 121, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-twelve {
+    padding-left: 576px; }
+
+  /* line 122, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-thirteen {
+    padding-left: 624px; }
+
+  /* line 123, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-fourteen {
+    padding-left: 672px; }
+
+  /* line 124, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-fifteen {
+    padding-left: 720px; } }
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  /* line 134, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container {
+    width: 300px; }
+
+  /* line 135, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .columns,
+  .container .column {
+    margin: 0; }
+
+  /* line 138, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 300px; }
+
+  /* Offsets */
+  /* line 159, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .offset-by-one,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine,
+  .container .offset-by-ten,
+  .container .offset-by-eleven,
+  .container .offset-by-twelve,
+  .container .offset-by-thirteen,
+  .container .offset-by-fourteen,
+  .container .offset-by-fifteen {
+    padding-left: 0; } }
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 184, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container {
+    width: 420px; }
+
+  /* line 185, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .columns,
+  .container .column {
+    margin: 0; }
+
+  /* line 188, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 420px; } }
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+/* line 214, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+/* line 218, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 228, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.row:after,
+.clearfix:after {
+  clear: both; }
+
+/* line 231, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+/* line 236, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/skeleton.css */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 11, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+ul.horizontal {
+  /*@include horizontal-list(10px);*/ }
+
+/* line 15, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+.first.columns {
+  margin-left: 0px; }
+
+/* line 19, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+.motto {
+  position: relative;
+  margin: 2em 0;
+  padding: 1em 0;
+  border-bottom: 1px solid #ddd; }
+  /* line 24, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+  .motto h4, .motto h5 {
+    color: #333; }
+    /* line 26, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+    .motto h4 > span.special, .motto h5 > span.special {
+      color: #B32C06; }
+  /* line 31, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+  .motto .fb-social {
+    overflow-x: visible;
+    position: absolute;
+    top: 20px;
+    right: -40px; }
+
+/* line 39, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+h5 {
+  color: #B32C06;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.1em; }
+
+/* line 45, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+span.special {
+  color: #B32C06; }
+
+/* line 49, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+span.nowrap {
+  white-space: nowrap; }
+
+/* line 53, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+a, a:visited, p a, p a:visited {
+  color: #B32C06;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #ccc; }
+  /* line 58, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+  a:hover, a:visited:hover, p a:hover, p a:visited:hover {
+    color: #B32C06;
+    background-color: #faffe3;
+    border-bottom: 1px solid #B32C06; }
+
+/* line 65, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+p.address {
+  margin-bottom: 10px; }
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  /* line 78, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+  .motto .fb-social {
+    position: static; } }
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 85, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+  body {
+    font-size: 80%;
+    line-height: 1.5; } }
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 93, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+  body {
+    font-size: 80%;
+    line-height: 1.5; }
+
+  /* line 97, /Users/varlamoved/Development/ru.botcamp/source/stylesheets/application.css.scss */
+  ul.horizontal li {
+    display: block;
+    float: none;
+    padding-left: 0; } }
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
